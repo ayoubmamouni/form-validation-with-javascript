@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="errorMsg">
+            <span>⛔</span>
+            <span class="err"></span>
+        </div>
+        <form action="/" class="main-form">
+            <div class="from-item">
+                <label for="fname">First name:</label>
+                <input class="input-item" type="text" id="fname" placeholder="Enter your first name">
+                <p class="err-text err-in-fname"></p>
+            </div>
+            <div class="from-item">
+                <label for="lname">Last name:</label>
+                <input class="input-item" type="text" id="lname" placeholder="Enter your last name">
+                <p class="err-text err-in-lname"></p>
+            </div>
+            <div class="from-item">
+                <label for="age">Age:</label>
+                <input class="input-item" type="number" id="age">
+                <p class="err-text err-in-age"></p>
+            </div>
+            <div class="from-item">
+                <label for="sub">The subject:</label>
+                <input class="input-item" type="text" id="sub" placeholder="Enter your subject">
+                <p class="err-text err-in-sub"></p>
+            </div>
+            <div class="from-item">
+                <label for="msg">Message:</label>
+                <textarea class="message input-item" id="msg"></textarea>
+                <p class="err-text err-in-msg"></p>
+            </div>
+            <button type="submit" class="submit-btn" role="button">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
